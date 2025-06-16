@@ -316,3 +316,21 @@
             <p>&copy; 2025 Horologie Welt - Ein Bildungsprojekt über die Kunst der Zeitmessung</p>
         </div>
     </footer>
+    <script>
+// Intersection Observer für Timeline-Animation
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+timelineItems.forEach(item => {
+    observer.observe(item);
+});
+</script>
