@@ -318,6 +318,12 @@
                 background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
                 position: relative;
             }
+            .luxury-watch-card {
+            /* ... bestehende Eigenschaften ... */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            }
             
             .luxury-watches-section::before {
                 content: '';
@@ -417,7 +423,12 @@
             .luxury-watch-card:hover .watch-3d {
                 transform: rotateY(15deg) rotateX(5deg);
             }
-            
+
+            .luxury-watch-info {
+             margin-top: auto;
+             text-align: left;
+             }
+
             .watch-case {
                 width: 100%;
                 height: 100%;
