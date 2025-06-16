@@ -363,7 +363,7 @@
                 content: '';
                 position: absolute;
                 top: -50%;
-                left: -50%;
+                left: -50%; 
                 width: 200%;
                 height: 200%;
                 background: conic-gradient(from 0deg, transparent, rgba(255, 215, 0, 0.1), transparent);
@@ -380,7 +380,7 @@
                 transform: translateY(-15px);
                 border-color: rgba(255, 215, 0, 0.4);
                 box-shadow: 0 25px 80px rgba(255, 215, 0, 0.2);
-            }
+             }Add commentMore actions
             .watch-image-container {
              height: 300px;
              display: flex;
