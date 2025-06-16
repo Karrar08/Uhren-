@@ -316,18 +316,22 @@
             <p>&copy; 2025 Horologie Welt - Ein Bildungsprojekt über die Kunst der Zeitmessung</p>
         </div>
     </footer>
-    <script>
+   <script>
 // Intersection Observer für Timeline-Animation
 const timelineItems = document.querySelectorAll('.timeline-item');
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            // Staggered delay for each item
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, index * 200); // 200ms delay between each item
         }
     });
 }, {
-    threshold: 0.3
+    threshold: 0.1, // Trigger when 10% visible
+    rootMargin: '0px 0px -50px 0px' // Start animation 50px before fully visible
 });
 
 timelineItems.forEach(item => {
