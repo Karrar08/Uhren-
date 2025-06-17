@@ -355,18 +355,15 @@
             }
             
             .luxury-watch-card {
-    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-    border-radius: 25px;
-    padding: 2rem;
-    border: 2px solid rgba(255, 215, 0, 0.1);
-    transition: all 0.5s ease;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Wichtig für gleiche Kartenhöhe */
-}
+                background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+                border-radius: 25px;
+                padding: 2rem;
+                border: 2px solid rgba(255, 215, 0, 0.1);
+                transition: all 0.5s ease;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+            }
             
             .luxury-watch-card::before {
                 content: '';
@@ -392,45 +389,40 @@
              }Add commentMore actions
 
             .watch-image-container {
-             width: 100%;
-              height: 220px; /* Feste Höhe für alle Container */
-              display: flex;
+            width: 100%;
+            height: 190px;
+            display: flex;
             align-items: center;
-               justify-content: center;
-               margin-bottom: 2rem;
-               border-radius: 15px;
-               background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-               position: relative;
-               overflow: hidden;
-              border: 2px solid rgba(255, 215, 0, 0.1);
-              flex-shrink: 0; /* Verhindert Schrumpfung */
-}
+            justify-content: center;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(255, 215, 0, 0.1);
+           }
 
-              .watch-image {
-            max-width: 90%;
-            max-height: 90%;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            object-position: center;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            filter: brightness(1.1) contrast(1.1);
-}
+           .watch-image {
+           max-width: 90%;
+           max-height: 90%;
+           width: auto;
+           height: auto;
+           object-fit: contain;
+           object-position: center;
+           border-radius: 8px;
+           transition: transform 0.3s ease;
+           filter: brightness(1.1) contrast(1.1);
+           } 
             
             
             .luxury-watch-card:hover .watch-3d {
                 transform: rotateY(15deg) rotateX(5deg);
             }
 
-                .luxury-watch-info {
-                 margin-top: auto;
-                 text-align: left;
-                 flex-grow: 1; /* Nimmt verfügbaren Platz ein */
-                 display: flex;
-                 flex-direction: column;
-                 justify-content: space-between;
-                 }
+            .luxury-watch-info {
+             margin-top: auto;
+             text-align: left;
+             }
 
             .watch-case {
                 width: 100%;
